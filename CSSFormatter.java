@@ -29,8 +29,8 @@ public class CSSFormatter {
             System.exit(0);
         }
         //System.out.println(prefix);
-        String output = input.replaceAll(";", ";\n");
-        output = output.replaceAll("\\{", "\\{\n");
+        String output = input.replaceAll(";", ";\n\t");
+        output = output.replaceAll("\\{", "\\{\n\t");
         output = output.replaceAll("\\}", "\n\\}\n");
         System.out.println(output);
     }

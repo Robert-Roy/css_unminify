@@ -19,7 +19,6 @@ public class CSSFormatter {
     public static void main(String[] args) {
         // adds linebreaks where appropriate in css files. after ;, {, and before and after }
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String lineBreakCharacters[] = {";", "{", "}"};
         String input = "";
         try {
             System.out.print("Give Data:");
@@ -28,7 +27,6 @@ public class CSSFormatter {
             System.out.println("This program has encountered an error.");
             System.exit(0);
         }
-        //System.out.println(prefix);
         String output = input.replaceAll(";", ";\n\t");
         output = output.replaceAll("\\{", "\\{\n\t");
         output = output.replaceAll("\\}", "\n\\}\n");
